@@ -1,0 +1,552 @@
+<div class="container-fluid">
+    <div class="side-nav">
+        <div class="icon-area">
+            <img src="../../assets/logo (1).svg" alt="">
+            <div class="icon">
+                <span><i class="fa-regular fa-bell"></i></span>
+                <span><i class="fa-regular fa-circle-user"></i></span>
+            </div>
+        </div>
+        <div class="profile">
+            <img src="../../assets/brian-hughes.jpg" alt="">
+            <h4>Brian Hughes</h4>
+            <p>hughes.brian@company.com</p>
+        </div>
+        <div class="profile-details">
+            <h4>dashboard</h4>
+            <p>unique dashboard design</p>
+            <div class="menu-list">
+                <ul>
+                    <li>
+                        <span><i class="fa-regular fa-calendar-check"></i></span>
+                       <a href="#"> project</a>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-chart-pie"></i></span>
+                        <a href="#">analytics</a>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-money-bills"></i></span>
+                        <a href="#">finance</a>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-circle-dollar-to-slot"></i></span>
+                        <a href="#">crypto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="profile-details">
+            <h4>application</h4>
+            <p>Custom made application design</p>
+            <div class="menu-list">
+                <ul>
+                    <li>
+                        <span><i class="fa-solid fa-graduation-cap"></i></span>
+                       <a href="#"> academy</a>
+                    </li>
+                    <li>
+                        <span><i class="fa-regular fa-comment-dots"></i></span>
+                        <a href="#">chat</a>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-users"></i></span>
+                        <a href="#">contacts</a>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-cart-shopping"></i></span>
+                        <a href="#">eCommerce</a>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-cloud"></i></span>
+                        <a href="#">file manager</a>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-life-ring"></i></span>
+                        <a href="#">help center</a>
+                    </li>
+                    <li>
+                        <span><i class="fa-regular fa-envelope"></i></span>
+                        <a href="#">mail box</a>
+                    </li>
+                    <li>
+                        <span><i class="fa-regular fa-pen-to-square"></i></span>
+                        <a href="#">notes</a>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-border-all"></i></span>
+                        <a href="#">scrum board</a>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-circle-check"></i></span>
+                        <a href="#">tasks</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="icon-list">
+            <div class="left-icon">
+                <a href="#">
+                    <span><i class="fa-solid fa-bars"></i></span>
+                </a>
+            </div>
+            <div class="right-icon">
+                <a href="#">
+                    <img src="../../assets/US.svg" alt="">
+                </a>
+                <a href="#">
+                    <span><i class="fa-solid fa-minimize"></i></span>
+                </a>
+                <a href="#">
+                    <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                </a>
+                <a href="#">
+                    <span><i class="fa-regular fa-bookmark"></i></span>
+                </a>
+                <a href="#">
+                    <span><i class="fa-regular fa-envelope-open"></i></span>
+                </a>
+            </div>
+        </div>
+        <div class="main-content">
+           <div class="first">
+                <div class="content-img">
+                    <img src="../../assets/brian-hughes.jpg" alt="admin">
+                </div>
+                <div class="admin-blog">
+                    <h2>Welcome back, Brian!</h2>
+                    <p><span><i class="fa-solid fa-bell"></i></span> You have 2 new messages and 15 new tasks</p>
+                </div>
+           </div>
+           <div class="second">
+            <a href="#" class="massage-btn"><span><i class="fa-regular fa-envelope"></i></span>massage</a>
+            <a href="#" class="setting-btn"><span><i class="fa-solid fa-gear"></i></span>setting</a>
+           </div>
+        </div>
+        <div class="tab">
+            <div class="toast">
+                <p>ACME Corp. Backend App <span><i class="fa-solid fa-chevron-down"></i></span></p>
+            </div>
+            <div class="button-list">
+                <button  (click)="showContent('home') " class="{{show}}">home</button>
+                <button  (click)="showContent('budget')" class="{{hide}}">budget</button>
+                <button  (click)="showContent('team')" class="{{show2}}">team</button>
+            </div>
+            <div class="tab-content">
+                <div *ngIf="home" class="first-content">
+                    <div class="card-area">
+                        <div class="card">
+                            <div class="top">
+                                <p>Summary</p>
+                                <p><i class="fa-solid fa-ellipsis-vertical"></i></p>
+                            </div>
+                            <div class="middle" id="middle-one">
+                                <h3>21</h3>
+                                <p>Due Tasks</p>
+                            </div>
+                            <div class="bottom">
+                                <p>Completed:
+                                    13</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="top">
+                                <p>Overdue</p>
+                                <p><i class="fa-solid fa-ellipsis-vertical"></i></p>
+                            </div>
+                            <div class="middle" id="middle-two">
+                                <h3>17</h3>
+                                <p>Tasks</p>
+                            </div>
+                            <div class="bottom">
+                                <p>From yesterday:
+                                    9</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="top">
+                                <p>Issues</p>
+                                <p><i class="fa-solid fa-ellipsis-vertical"></i></p>
+                            </div>
+                            <div class="middle" id="middle-three">
+                                <h3>24</h3>
+                                <p>Open</p>
+                            </div>
+                            <div class="bottom">
+                                <p>Closed today:
+                                    19</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="top">
+                                <p>Features</p>
+                                <p><i class="fa-solid fa-ellipsis-vertical"></i></p>
+                            </div>
+                            <div class="middle" id="middle-four">
+                                <h3>38</h3>
+                                <p>Proposals</p>
+                            </div>
+                            <div class="bottom">
+                                <p>Implemented:
+                                    16</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="graph-section">
+                        <div class="graph-content">
+                            <h4>Github Issues Summary</h4>
+                            <div class="week">
+                                <a href="#">last week</a>
+                                <a href="#">this week</a>
+                            </div>
+                        </div>
+                        <div class="overview-section">
+                            <div class="close">
+                                <p>New vs. Closed</p>
+                                <div id="chart">
+                                    <apx-chart
+                                        [series]="series" 
+                                        [chart]="chart"
+                                        [legend]="legend"
+                                        [xaxis]="xaxis"
+                                        [stroke]="stroke"
+                                        [markers]="markers">
+                                    </apx-chart>
+                                </div>
+                            </div>
+                            <div class="overview">
+                                <p>Overview</p>
+                                <div class="first-grid">
+                                    <div class="grid-one">214
+                                        <span>New Issues</span>
+                                    </div>
+                                    <div class="grid-two">75
+                                        <span>Closed</span>
+                                    </div>
+                                </div>
+                                <div class="second-grid">
+                                    <div class="grid-three">3
+                                        <span>Fixed</span>
+                                    </div>
+                                    <div class="grid-three">4
+                                        <span>Won't Fix</span>
+                                    </div>
+                                    <div class="grid-three">8
+                                        <span>Re-opened</span>
+                                    </div>
+                                    <div class="grid-three">6
+                                        <span>Needs Triage</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pie-section">
+                        <div class="pie-chart">
+                            <div class="pie-content">
+                                <h4>Task Distribution</h4>
+                                <div class="task">
+                                    <a href="#">last week</a>
+                                    <a href="#">this week</a>
+                                </div>
+                            </div>
+                            <div class="polarArea">
+                                <canvas 
+                                    baseChart
+                                    [datasets]="polarChartDatasets"
+                                    [options]="polarChartOptions"
+                                    [labels]="polarChartLabels"
+                                    [type]="'polarArea'">
+                                </canvas>
+                                <div class="btn-area">
+                                    <div class="btn">
+                                        <h3>594</h3>
+                                        <p>New tasks</p>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="btn">
+                                        <h3>287</h3>
+                                        <p>Completed tasks</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chart-content-area">
+                            <div class="chart-content">
+                                <h4>Schedule</h4>
+                                <div class="task">
+                                    <a href="#">today</a>
+                                    <a href="#">tomorrow</a>
+                                </div>
+                            </div>
+                            <div class="chart-icon-flex">
+                                <div class="icon-content">
+                                    <h4>Group Meeting</h4>
+                                    <p><span><i class="fa-solid fa-clock"></i> </span> in 32 minutes <span><i class="fa-solid fa-location-dot"></i> </span> Conference room 1B</p>
+                                </div>
+                                <div class="arrow">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                            <div class="chart-icon-flex">
+                                <div class="icon-content">
+                                    <h4>Group Meeting</h4>
+                                    <p><span><i class="fa-solid fa-clock"></i> </span> in 32 minutes <span><i class="fa-solid fa-location-dot"></i> </span> Conference room 1B</p>
+                                </div>
+                                <div class="arrow">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                            <div class="chart-icon-flex">
+                                <div class="icon-content">
+                                    <h4>Group Meeting</h4>
+                                    <p><span><i class="fa-solid fa-clock"></i> </span> in 32 minutes <span><i class="fa-solid fa-location-dot"></i> </span> Conference room 1B</p>
+                                </div>
+                                <div class="arrow">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                            <div class="chart-icon-flex">
+                                <div class="icon-content">
+                                    <h4>Group Meeting</h4>
+                                    <p><span><i class="fa-solid fa-clock"></i> </span> in 32 minutes <span><i class="fa-solid fa-location-dot"></i> </span> Conference room 1B</p>
+                                </div>
+                                <div class="arrow">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                            <div class="chart-icon-flex">
+                                <div class="icon-content">
+                                    <h4>Group Meeting</h4>
+                                    <p><span><i class="fa-solid fa-clock"></i> </span> in 32 minutes <span><i class="fa-solid fa-location-dot"></i> </span> Conference room 1B</p>
+                                </div>
+                                <div class="arrow">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                            <div class="chart-icon-flex">
+                                <div class="icon-content">
+                                    <h4>Group Meeting</h4>
+                                    <p><span><i class="fa-solid fa-clock"></i> </span> in 32 minutes <span><i class="fa-solid fa-location-dot"></i> </span> Conference room 1B</p>
+                                </div>
+                                <div class="arrow">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                            <div class="chart-icon-flex">
+                                <div class="icon-content">
+                                    <h4>Group Meeting</h4>
+                                    <p><span><i class="fa-solid fa-clock"></i> </span> in 32 minutes <span><i class="fa-solid fa-location-dot"></i> </span> Conference room 1B</p>
+                                </div>
+                                <div class="arrow">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div *ngIf="budget" class="second-content">
+                    <div class="budgetPolar">
+                        <div class="polar-graph">
+                            <h3>Budget Distribution</h3>
+                            <canvas 
+                                baseChart
+                                [type]="'radar'"
+                                [data]="lineChartData"
+                                [options]="lineChartOptions"
+                                [legend]="lineChartLegend">
+                            </canvas>
+                        </div>
+                        <div class="polar-cart">
+                            <div class="cart-1">
+                                <div class="cart-content">
+                                    <p>Weekly Expenses</p>
+                                    <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                                </div>
+                                <div class="statistics">
+                                    <div class="one">
+                                        <h3>$17,663.00</h3>
+                                        <p><span>2% </span> below projected</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-1">
+                                <div class="cart-content">
+                                    <p>Weekly Expenses</p>
+                                    <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                                </div>
+                                <div class="statistics">
+                                    <div class="one">
+                                        <h3>$17,663.00</h3>
+                                        <p><span>2% </span> below projected</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-1">
+                                <div class="cart-content">
+                                    <p>Weekly Expenses</p>
+                                    <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                                </div>
+                                <div class="statistics">
+                                    <div class="one">
+                                        <h3>$17,663.00</h3>
+                                        <p><span>2% </span> below projected</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div *ngIf="team" class="third-content">
+                    <div class="card">
+                        <div class="top-area">
+                            <img src="../../assets/female-10.jpg" alt="">
+                            <p>Nadia Mcknight</p>
+                            <p>Project Director</p>
+                        </div>
+                        <div class="bottom">
+                             <div class="mail">
+                                <a href="#"><span><i class="fa-regular fa-envelope"></i></span> Email</a>
+                             </div>
+                             <div class="divider"></div>
+                             <div class="call">
+                                <a href="#"><span><i class="fa-solid fa-phone"></i></span> Call</a>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="top-area">
+                            <img src="../../assets/male-19.jpg" alt="">
+                            <p>Nadia Mcknight</p>
+                            <p>Project Director</p>
+                        </div>
+                        <div class="bottom">
+                             <div class="mail">
+                                <a href="#"><span><i class="fa-regular fa-envelope"></i></span> Email</a>
+                             </div>
+                             <div class="divider"></div>
+                             <div class="call">
+                                <a href="#"><span><i class="fa-solid fa-phone"></i></span> Call</a>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="top-area">
+                            <img src="../../assets/male-14.jpg" alt="">
+                            <p>Nadia Mcknight</p>
+                            <p>Project Director</p>
+                        </div>
+                        <div class="bottom">
+                             <div class="mail">
+                                <a href="#"><span><i class="fa-regular fa-envelope"></i></span> Email</a>
+                             </div>
+                             <div class="divider"></div>
+                             <div class="call">
+                                <a href="#"><span><i class="fa-solid fa-phone"></i></span> Call</a>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="top-area">
+                            <img src="../../assets/male-02.jpg" alt="">
+                            <p>Nadia Mcknight</p>
+                            <p>Project Director</p>
+                        </div>
+                        <div class="bottom">
+                             <div class="mail">
+                                <a href="#"><span><i class="fa-regular fa-envelope"></i></span> Email</a>
+                             </div>
+                             <div class="divider"></div>
+                             <div class="call">
+                                <a href="#"><span><i class="fa-solid fa-phone"></i></span> Call</a>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="top-area">
+                            <img src="../../assets/female-20.jpg" alt="">
+                            <p>Nadia Mcknight</p>
+                            <p>Project Director</p>
+                        </div>
+                        <div class="bottom">
+                             <div class="mail">
+                                <a href="#"><span><i class="fa-regular fa-envelope"></i></span> Email</a>
+                             </div>
+                             <div class="divider"></div>
+                             <div class="call">
+                                <a href="#"><span><i class="fa-solid fa-phone"></i></span> Call</a>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="top-area">
+                            <img src="../../assets/female-03.jpg" alt="">
+                            <p>Nadia Mcknight</p>
+                            <p>Project Director</p>
+                        </div>
+                        <div class="bottom">
+                             <div class="mail">
+                                <a href="#"><span><i class="fa-regular fa-envelope"></i></span> Email</a>
+                             </div>
+                             <div class="divider"></div>
+                             <div class="call">
+                                <a href="#"><span><i class="fa-solid fa-phone"></i></span> Call</a>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="top-area">
+                            <img src="../../assets/male-01.jpg" alt="">
+                            <p>Nadia Mcknight</p>
+                            <p>Project Director</p>
+                        </div>
+                        <div class="bottom">
+                             <div class="mail">
+                                <a href="#"><span><i class="fa-regular fa-envelope"></i></span> Email</a>
+                             </div>
+                             <div class="divider"></div>
+                             <div class="call">
+                                <a href="#"><span><i class="fa-solid fa-phone"></i></span> Call</a>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="top-area">
+                            <img src="../../assets/female-02.jpg" alt="">
+                            <p>Nadia Mcknight</p>
+                            <p>Project Director</p>
+                        </div>
+                        <div class="bottom">
+                             <div class="mail">
+                                <a href="#"><span><i class="fa-regular fa-envelope"></i></span> Email</a>
+                             </div>
+                             <div class="divider"></div>
+                             <div class="call">
+                                <a href="#"><span><i class="fa-solid fa-phone"></i></span> Call</a>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="top-area">
+                            <img src="../../assets/female-01.jpg" alt="">
+                            <p>Nadia Mcknight</p>
+                            <p>Project Director</p>
+                        </div>
+                        <div class="bottom">
+                             <div class="mail">
+                                <a href="#"><span><i class="fa-regular fa-envelope"></i></span> Email</a>
+                             </div>
+                             <div class="divider"></div>
+                             <div class="call">
+                                <a href="#"><span><i class="fa-solid fa-phone"></i></span> Call</a>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </div>
+</div>
+

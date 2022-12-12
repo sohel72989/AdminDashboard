@@ -1,0 +1,1507 @@
+.container-fluid{
+    width: 100%;
+    display:flex;
+    // flex-direction: row;
+    // grid-template-columns: repeat(2, 20% 80%); 
+    .side-nav{
+        width: 18%;
+        position: fixed;
+        height: 100%;
+        overflow: scroll;
+        scroll-behavior: smooth;
+        background-color: #0F172A;
+        padding: 10px 20px;
+        z-index: 2;
+            img{
+                width: 13%;
+            }
+            .icon-area{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px 0px;
+                .icon span{
+                    color: #ccc;
+                    padding: 10px;
+                    font-size: 22px;
+                    border: 1px solid #0F172A;
+                    border-radius: 50%;
+                }
+                .icon span:hover{
+                    cursor: pointer;
+                    color: #ccc;
+                    background-image: linear-gradient(rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0.1));
+                    border-radius: 50%;
+                }
+            }
+        .profile{
+            color: #ccc;
+            text-align: center;
+            line-height: 1.5;
+            margin: 30px 0;
+            padding-bottom: 30px;
+            img{
+                width: 40%;
+                border-radius: 50%;
+                margin-bottom: 15px;
+            }
+        }
+        .profile-details{
+            color: #ccc;
+            h4{
+                color: #6F86F8;
+                text-transform: uppercase;
+                margin-top: 40px;
+                font-size: 12px;
+                letter-spacing: 1.5px;
+                padding: 5px 0;
+            }
+            p{
+                font-size: 11px;
+            }
+            .menu-list{
+                margin: 15px;
+                ul{
+                    list-style: none;
+                    padding-left: 5px;
+                    li{
+                        color: #73818F;
+                        display: flex;
+                        margin-top: 5px;
+                        padding: 10px 20px;
+                        align-items: center;
+                        span{
+                            min-width: 30px;
+                            font-size: 22px;
+                            padding-right: 20px;
+                        }
+                        a{
+                            text-decoration: none;
+                            font-size: 13px;
+                            font-weight: 600;
+                            color: #ccc;
+                            text-transform: capitalize;
+                        }
+                    }
+                    li:hover{
+                        background-image: linear-gradient(rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0.1));
+                        border-radius: 5px;
+                        cursor: pointer;
+                        color: #fff;
+                    }
+                }
+
+            }
+        }
+        
+    }
+    .side-nav::-webkit-scrollbar{
+        display: none;
+    }
+    .container{
+        width: 82%;
+        margin-left: 21%;
+        .icon-list{
+            position: fixed;
+            width: 77%;
+            border-bottom: 1px solid #ccc;
+            background-color: #FFF;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1;
+           a{
+            color: #7C889A;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px 5px;
+            padding: 10px;
+            width: 30px;
+            text-align: center;
+           }
+           a>span{
+            font-size: 22px;
+           }
+        a:hover{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.05),rgba(0, 0, 0, 0.05));
+            border-radius: 50%;
+        }
+           .right-icon{
+            img{
+                width: 26px;
+            }
+           }
+           
+        }
+        .main-content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 120px 30px 0 30px;
+           .first{
+            display: flex;
+            align-items: center;
+                .content-img{
+                    padding-right: 15px;
+                    img{
+                        width: 65px;
+                        border-radius: 50%;
+                    }
+                }
+                .admin-blog{
+                    h2{
+                        font-size: 35px;
+                        color: #0F172A;
+                        margin-bottom: 10px;
+                    }
+                    p{
+                        color:#7C889A;
+                    }
+                }
+           }
+           .second{
+                .massage-btn{
+                    background-color: #0F172A;
+                    color: #fff;
+                }
+                .setting-btn{
+                    background-color: #5249E3;
+                    color:#fff ;
+                }
+                a{
+                    text-decoration: none;
+                    text-transform: capitalize;
+                    display: inline-block;
+                    padding: 10px 30px;
+                    border: 1px solid #ccc;
+                    border-radius: 20px;
+                    margin-left: 15px;
+                }
+                a span{
+                    padding-right: 10px;
+                }
+            }
+        }
+        .tab{
+            background-color: #F1F5F9;
+            margin: 100px 0px 0px 0px;
+            padding: 25px 20px;
+            .toast{
+                background-color: inherit;
+                border-radius: 20px;
+                margin-left: 20px;
+                max-width: 270px;
+                p{
+                    color: #0F172A;
+                    margin-top: -60px;
+                    text-align: center;
+                    padding: 15px 10px 35px 10px;
+                    cursor: pointer;
+                    font-size: 15px;
+                    span{
+                        font-size: 13px;
+                        padding-left: 10px;
+                    }
+                }
+            }
+           .button-list{
+            border-bottom:1px solid #a8b7ce ;
+                button{
+                    display: inline-block;
+                    border-style: none;
+                    background-color: #F1F5F9;
+                    text-transform: capitalize;
+                    padding: 15px 25px;
+                    width: 100px;
+                    height: 50px;
+                    font-size: 18px;
+                }
+                .active{
+                    cursor: pointer;
+                    color: #5249E3;
+                    border-bottom: 2px solid #5249E3;
+                }
+                .active:hover{
+                    background-image: linear-gradient(rgba(0, 0, 0, 0.05),rgba(0, 0, 0, 0.05));
+                    cursor: pointer;
+                    color: #5249E3;
+                    border-bottom: 2px solid #5249E3;
+                }
+                .nonActive:hover{
+                    background-image: linear-gradient(rgba(0, 0, 0, 0.05),rgba(0, 0, 0, 0.05));
+                    cursor: pointer;
+                }
+           }
+            .tab-content{
+                margin-top: 30px;
+                .first-content{
+                    .card-area{
+                        display: grid;
+                        grid-template-columns: repeat(4, 1fr);
+                        gap: 20px;
+                    .card{
+                        border: 1px solid #fff;
+                        box-shadow: 2px 2px 15px 1px #cccccc;
+                        padding: 25px;
+                        background-color: #fff;
+                        border-radius: 20px;
+                        .top{
+                            color:#0F172A;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            margin-bottom: 15px;
+                            
+                            :first-child{
+                                font-size: 18px;
+                            }
+                            p{
+                                padding: 10px;
+                                width: 20px;
+                                border: 1px solid #fff;
+                                border-radius: 50%;
+                                text-align: center;
+                            }
+                            :last-child:hover{
+                                background-image: linear-gradient(rgba(0, 0, 0, 0.05),rgba(0, 0, 0, 0.05));
+                                cursor: pointer;
+                            }
+                        }
+                        .middle{
+                            text-align: center;
+                        }
+                        #middle-one{
+                            h3{
+                                font-size: 65px;
+                                font-weight: bolder;
+                                color:#5249E3;
+                            }
+                            :last-child{
+                                color: #5249E3;
+                            }
+                        }
+                        #middle-two{
+                            h3{
+                                font-size: 65px;
+                                font-weight: bolder;
+                                color:#EF4444;
+                            }
+                            :last-child{
+                                color: #EF4444;
+                            }
+                        }
+                        #middle-three{
+                            h3{
+                                font-size: 65px;
+                                font-weight: bolder;
+                                color:#F59E0B;
+                            }
+                            :last-child{
+                                color: #F59E0B;
+                            }
+                        }
+                        #middle-four{
+                            h3{
+                                font-size: 65px;
+                                font-weight: bolder;
+                                color:#22C55E;
+                            }
+                            :last-child{
+                                color: #22C55E;
+                            }
+                        }
+                        .bottom{
+                            color:#7C889A;
+                            text-align: center;
+                            font-size: 14px;
+                            padding: 30px 0 15px 0;
+                        }
+                    }
+                    }
+                    .graph-section{
+                        background-color: #fff;
+                        box-shadow: 2px 2px 15px 1px #cccccc;
+                        border-radius: 20px;
+                        margin-top: 30px;
+                        padding: 10px;
+                            .graph-content{
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                margin-bottom: 20px;
+                                h4{
+                                    color: #0F172A;
+                                    font-size: 24px;
+                                }
+                                .week{
+                                    a{
+                                        color: #6D7C91;
+                                        text-decoration: none;
+                                        text-transform: capitalize;
+                                        font-size: 18px;
+                                        display: inline-block;
+                                        padding: 10px 25px;
+                                    }
+                                    a:hover{
+                                        background-image: linear-gradient(rgba(0, 0, 0, 0.05),rgba(0, 0, 0, 0.05));
+                                        border-radius: 20px;
+                                    }
+                                }
+                            }
+                            .overview-section{
+                                display: grid;
+                                grid-template-columns: repeat(2, 1fr);
+                                gap: 20px;
+                                p{
+                                    color:#6D7C91;
+                                }
+                                .close{
+                                    font-size: 18px;
+                                    #chart{
+                                        margin: 30px 0 0 0;
+                                        min-width: 300px;
+                                    }
+
+                                }
+                                .overview{
+                                    p{
+                                        font-size: 18px;
+                                    }
+                                    .first-grid{
+                                        display: grid;
+                                        grid-template-columns: repeat(2, 1fr);
+                                        gap: 10px;
+                                        margin: 20px 0;
+                                        .grid-one{
+                                            text-align: center;
+                                            color: #3730A3;
+                                            background-color: #EEF2FF;
+                                            border-radius: 20px;
+                                            padding: 30px 50px;
+                                            font-size: 48px;
+                                            font-weight: bolder;
+                                            span{
+                                                display: block;
+                                                font-size: 16px;
+                                                font-weight: 500;
+                                            }
+                                        }
+                                        .grid-two{
+                                            text-align: center;
+                                            color: #166534;
+                                            background-color: #EEF2FF;
+                                            border-radius: 20px;
+                                            padding: 30px 60px;
+                                            font-size: 48px;
+                                            font-weight: bolder;
+                                            span{
+                                                display: block;
+                                                font-size: 16px;
+                                                font-weight: 500;
+                                            }
+                                        }
+                                    }
+                                    .second-grid{
+                                        display: grid;
+                                        grid-template-columns: repeat(4, 1fr);
+                                        gap: 10px;
+                                        .grid-three{
+                                            text-align: center;
+                                            color: #64748B;
+                                            background-color: #EEF2FF;
+                                            border-radius: 20px;
+                                            padding:35px 15px;
+                                            font-size: 36px;
+                                            font-weight: bolder;
+                                            span{
+                                                display: block;
+                                                min-width: 60px;
+                                                font-size: 12px;
+                                                font-weight: 500;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                    }
+                    .pie-section{
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        gap: 30px;
+                        .pie-chart{
+                            position: relative;
+                            background-color: #fff;
+                            box-shadow: 2px 2px 15px 1px #cccccc;
+                            border-radius: 20px;
+                            margin-top: 30px;
+                            .pie-content{
+                                display: flex;
+                                padding: 20px;
+                                justify-content: space-between;
+                                align-items: center;
+                                margin-bottom: 50px;
+                                h4{
+                                    color: #0F172A;
+                                    font-size: 20px;
+                                }
+                                .task{
+                                    a{
+                                        color: #6D7C91;
+                                        text-decoration: none;
+                                        text-transform: capitalize;
+                                        font-size: 16px;
+                                        display: inline-block;
+                                        padding: 10px 20px;
+                                    }
+                                    a:hover{
+                                        background-image: linear-gradient(rgba(0, 0, 0, 0.05),rgba(0, 0, 0, 0.05));
+                                        border-radius: 20px;
+                                    }
+                                }
+                            }
+                            .polarArea{
+                                canvas{
+                                    min-width:350px;
+                                    margin: 0 auto;
+                                    height: 180px;
+                                }
+                                .btn-area{
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: space-evenly;
+                                    align-items: center;
+                                    text-align: center;
+                                    background-color: #F1F5F9;
+                                    border-top: 1px solid #ccc;
+                                    border-radius: 0 0 20px 20px;
+                                    bottom: 0;
+                                    .btn{
+                                        width: 50%;
+                                        text-align: center;
+                                        h3{
+                                            font-size: 36px;
+                                            color: #1E293B;
+                                        }
+                                            
+                                        p{
+                                            font-size: 16px;
+                                            color: #7C889A;
+                                        }
+                                    }
+                                    .divider{
+                                        border-right: 1px solid #ccc;
+                                        height: 150px;
+                                    }
+                                }
+                                
+                            }
+                        }
+                        .chart-content-area{
+                            background-color: #fff;
+                            box-shadow: 2px 2px 15px 1px #cccccc;
+                            border-radius: 20px;
+                            margin-top: 30px;
+                            padding: 20px 25px;
+                            .chart-content{
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                margin-bottom: 50px;
+                                h4{
+                                    color: #0F172A;
+                                    font-size: 20px;
+                                }
+                                .task{
+                                    a{
+                                        color: #6D7C91;
+                                        text-decoration: none;
+                                        text-transform: capitalize;
+                                        font-size: 16px;
+                                        display: inline-block;
+                                        padding: 10px 25px;
+                                    }
+                                    a:hover{
+                                        background-image: linear-gradient(rgba(0, 0, 0, 0.05),rgba(0, 0, 0, 0.05));
+                                        border-radius: 20px;
+                                    }
+                                }
+                            }
+                            .chart-icon-flex{
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                border-bottom: 1px solid #ccc;
+                                padding: 15px;
+                                .icon-content{
+                                    h4{
+                                        color: #0F172A;
+                                        font-size: 20px;
+                                        line-height: 2;
+                                    }
+                                    p{
+                                        color: #73818F;
+                                        line-height: 2;
+                                        span{
+                                            font-size: 20px;
+                                            color: #6D7C91;
+                                        }
+                                    }
+                                }
+                                .arrow{
+                                    font-size: 16px;
+                                    font-weight: 600;
+                                    width: 20px;
+                                    text-align: center;
+                                    padding: 10px;
+                                }
+                                .arrow:hover{
+                                    background-image: linear-gradient(rgba(0, 0, 0, 0.05),rgba(0, 0, 0, 0.05)); 
+                                    border-radius: 50%;
+                                    cursor: pointer;
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+                .second-content{
+                    .budgetPolar{
+                        display: flex;
+                        justify-content: space-between;
+                        .polar-graph{
+                            width: 65%;
+                            background-color: #fff;
+                            border-radius: 20px;
+                            padding: 20px;
+                            canvas{
+                                min-height: 200px;
+                                margin: 0 auto;
+                            }
+                            h3{
+                                font-size: 18px;
+                                margin-bottom: 30px;
+                            }
+                        }
+                        .polar-cart{
+                            width: 25%;
+                            display: grid;
+                            grid-template-columns: repeat(1, 1fr);
+                            gap: 30px;
+                            .cart-1{
+                                background-color: #fff;
+                                border-radius: 20px;
+                                padding: 20px 30px;
+                                .cart-content{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    p{
+                                        font-size: 16px;
+                                    }
+                                    span{
+                                        width: 15px;
+                                        padding: 5px 8px;
+                                        text-align: center;
+                                    }
+                                    span:hover{
+                                        background-image: linear-gradient(rgba(0, 0, 0, 0.05),rgba(0, 0, 0, 0.05));
+                                        cursor: pointer;
+                                        border-radius: 50%;
+                                    }
+                                }
+                                .statistics{
+                                    margin-top: 20px;
+                                    .one{
+                                        h3{
+                                            font-size: 24px;
+                                        }
+                                        p{
+                                            font-size: 12px;
+                                            line-height: 2;
+                                            span{
+                                                color: #22C55E;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .third-content{
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    gap: 15px;
+                    .card{
+                        background-color: #fff;
+                        border-radius: 20px;
+                        text-align: center;
+                        min-width: 220px;
+                        box-shadow: 2px 2px 15px 1px #cccccc;
+                        position: relative;
+                         .top-area{
+                            padding: 30px;
+                            margin-bottom: 50px;
+                            img{
+                                width: 120px;
+                                border-radius: 50%;
+                                padding: 30px 0;
+                            }
+                            p{
+                                font-size: 16px;
+                                line-height: 1.5;
+                            }
+                            :last-child{
+                                color: #73818F;
+                            }
+                         }
+                        .bottom{
+                            display: flex;
+                            justify-content:center;
+                            align-items: center;
+                            border-top: 1px solid #ccc;
+                            width: 100%;
+                            position: absolute;
+                            bottom: 0;
+
+                            a{
+                                text-decoration: none;
+                                color:#0F172A;
+                                display: inline-block;
+                                font-size: 16px;
+                                i{
+                                    color: #94A3B8;
+                                    padding: 0px 10px;
+                                }
+                            }
+                            .mail{
+                                padding: 10px 12px;
+                                width: 50%;
+                            }
+                            .mail:hover{
+                                background-image: linear-gradient(rgba(0, 0, 0, 0.05),rgba(0, 0, 0, 0.05));
+                                border-radius: 0 0 0 20px;
+                                cursor: pointer;
+                            }
+                            .divider{ 
+                                border-right: 1px solid #ccc;
+                                height: 40px;
+                            }
+                            .call{
+                                padding: 10px 12px;
+                                width: 50%;
+                            }
+                            .call:hover{
+                                background-image: linear-gradient(rgba(0, 0, 0, 0.05),rgba(0, 0, 0, 0.05));
+                                border-radius: 0 0 20px 0;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+   
+}
+
+
+
+//For android screen 
+
+
+@media(min-width:350px) and (max-width:388px){
+    .container-fluid{
+        .side-nav{
+            display: none;
+        }
+        
+        .container{
+            margin-left: 0% !important;
+            width: 100% !important;
+            .icon-list{
+                width: 100% !important;
+                a{
+                    width: 20px;
+                }
+            }
+            .main-content{
+                display: block;
+                .first{
+                    .content-img{
+                        img{
+                            width: 50px;
+                        }
+                    }
+                    .admin-blog{
+                        h2{
+                            font-size: 25px;
+                        }
+                    }
+                }
+                .second{
+                    margin-top: 15px;
+                    a{
+                        padding: 8px 20px;
+                        margin-left: 0px;
+                    }
+                    .setting-btn{
+                        margin-left: 15px;
+                    }
+
+                }
+                
+            }
+            .tab{
+                padding: 15px;
+                .tab-content{
+                    .first-content{
+                        .card-area{
+                            display: grid;
+                            grid-template-columns: repeat(1, 1fr);
+                        }
+                        .graph-section{
+                            .graph-content{
+                                h4{
+                                    font-size: 14px;
+                                }
+                                .week{
+                                    a{
+                                        font-size: 12px;
+                                        padding: 0px 3px;
+                                    }
+                                }
+                            }
+                            .overview-section{
+                                display: grid;
+                                grid-template-columns: repeat(1, 1fr);
+                                p{
+                                    font-size: 15px;
+                                }
+                                .close{
+                                    
+                                    #chart{
+                                       min-width: 200px;
+                                    }
+                                }
+                                .overview{
+                                    p{
+                                        font-size: 15px;
+                                    }
+                                    .first-grid{
+                                        .grid-one{
+                                            font-size: 32px;
+                                            padding: 15px;
+                                            span{
+                                                font-size: 12px;
+                                                font-weight: 500;
+                                            }
+                                        }
+                                        .grid-two{
+                                            font-size: 32px;
+                                            padding: 15px;
+                                            span{
+                                                font-size: 12px;
+                                                font-weight: 500;
+                                            }
+                                        }
+                                    }
+                                    .second-grid{
+                                        display: grid;
+                                        grid-template-columns: repeat(2, 1fr);
+                                        .grid-three{
+                                            font-size: 32px;
+                                            padding: 15px;
+                                            span{
+                                                font-size: 12px;
+                                                font-weight: 500;
+                                            }
+                                        }
+                                    }
+                                }
+                                
+                            }
+                        }
+                        .pie-section{
+                            display: grid;
+                            grid-template-columns: repeat(1, 1fr);
+                            gap: 20px;
+                            .pie-chart{
+                                .pie-content{
+                                    h4{
+                                        font-size: 16px;
+                                    }
+                                    .task{
+                                        a{
+                                            font-size: 14px;
+                                            padding: 0px 5px;
+                                        }
+                                    }
+                                }
+                                .polarArea{
+                                    padding: 0;
+                                    canvas{
+                                        max-width:250px;
+                                        margin: 0 auto;
+                                        height: 180px;
+                                    }
+                                    .btn-area{
+                                        .btn{
+                                            h3{
+                                                font-size: 24px;
+                                            }
+                                            p{
+                                                font-size: 12px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .chart-content-area{
+                                .chart-content{
+                                    h4{
+                                        font-size: 16px;
+                                    }
+                                    .task{
+                                        a{
+                                            font-size: 14px;
+                                            padding: 5px 10px;
+                                        }
+                                    }
+                                }
+                                .chart-icon-flex{
+                                    .icon-content{
+                                        h4{
+                                            font-size: 16px;
+                                        }
+                                        p{
+                                            font-size: 13px;
+                                        }
+                                    }
+                                    .arrow{
+                                        font-size: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .second-content{
+                        .budgetPolar{
+                            flex-direction: column;
+                            .polar-graph{
+                                width: 86%;
+                                canvas{
+                                    max-width: 200px;
+                                }
+                            }
+                            .polar-cart{
+                                margin-top: 20px;
+                                width: 100%;
+                                display: grid;
+                                grid-template-columns: repeat(1, 1fr);
+                                gap: 30px;
+                            }
+                        }
+                    }
+                    .third-content{
+                        display: grid;
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                }
+            }
+        }
+    }
+}
+@media(min-width:389px) and (max-width:499px){
+    .container-fluid{
+        .side-nav{
+            display: none;
+            }
+        
+        .container{
+            margin-left: 0% !important;
+            width: 100% !important;
+            .icon-list{
+                width: 100% !important;
+            }
+            .main-content{
+                display: block;
+                .first{
+                    .content-img{
+                        img{
+                            width: 50px;
+                        }
+                    }
+                    .admin-blog{
+                        h2{
+                            font-size: 25px;
+                        }
+                    }
+                }
+                .second{
+                    margin-top: 20px;
+                    a{
+                        margin-left: 0px;
+                    }
+                    .setting-btn{
+                        margin-left: 10px;
+                    }
+                }
+                
+            }
+            .tab{
+                .tab-content{
+                    .first-content{
+                        .card-area{
+                            display: grid;
+                            grid-template-columns: repeat(1, 1fr);
+                        }
+                        .graph-section{
+                            .graph-content{
+                                h4{
+                                    font-size: 16px;
+                                }
+                                .week{
+                                    a{
+                                        font-size: 14px;
+                                        padding: 0px 5px;
+                                    }
+                                }
+                            }
+                            .overview-section{
+                                display: grid;
+                                grid-template-columns: repeat(1, 1fr);
+                                p{
+                                    font-size: 15px;
+                                }
+                                .close{
+                                    
+                                    #chart{
+                                       min-width: 350px;
+                                    }
+                                }
+                                .overview{
+                                    p{
+                                        font-size: 15px;
+                                    }
+                                    .first-grid{
+                                        display: grid;
+                                        grid-template-columns: repeat(1, 1fr);
+                                    }
+                                    .second-grid{
+                                        display: grid;
+                                        grid-template-columns: repeat(2, 1fr);
+                                    }
+                                }
+                                
+                            }
+                        }
+                        .pie-section{
+                            display: grid;
+                            grid-template-columns: repeat(1, 1fr);
+                            gap: 20px;
+                            .pie-chart{
+                                .pie-content{
+                                    h4{
+                                        font-size: 16px;
+                                    }
+                                    .task{
+                                        a{
+                                            font-size: 14px;
+                                            padding: 0px 5px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .second-content{
+                        .budgetPolar{
+                            flex-direction: column;
+                            .polar-graph{
+                                width: 90%;
+                                canvas{
+                                    max-width: 250px;
+                                }
+                            }
+                            .polar-cart{
+                                margin-top: 20px;
+                                width: 100%;
+                                display: grid;
+                                grid-template-columns: repeat(1, 1fr);
+                                gap: 30px;
+                            }
+                        }
+                    }
+                    .third-content{
+                        display: grid;
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                }
+            }
+        }
+    }
+}
+@media(min-width:500px) and (max-width:758px){
+    .container-fluid{
+        .side-nav{
+            display: none;
+            }
+        
+        .container{
+            margin-left: 0% !important;
+            width: 100% !important;
+            .icon-list{
+                width: 100% !important;
+            }
+            .main-content{
+                display: block;
+                .first{
+                    .content-img{
+                        img{
+                            width: 50px;
+                        }
+                    }
+                    .admin-blog{
+                        h2{
+                            font-size: 32px;
+                        }
+                    }
+                }
+                .second{
+                    margin-top: 20px;
+                    a{
+                        margin-left: 0px;
+                    }
+                    .setting-btn{
+                        margin-left: 15px;
+                    }
+                }
+                
+            }
+            .tab{
+                .tab-content{
+                    .first-content{
+                        .card-area{
+                            display: grid;
+                            grid-template-columns: repeat(2, 1fr);
+                        }
+                        .graph-section{
+                            .overview-section{
+                                display: grid;
+                                grid-template-columns: repeat(1, 1fr);
+                                .close{
+                                    #chart{
+                                       min-width: 350px;
+                                    }
+                                }
+                                
+                            }
+                            .graph-content{
+                                h4{
+                                    font-size: 18px;
+                                }
+                                .week{
+                                    a{
+                                        font-size: 15px;
+                                        padding: 5px 10px;
+                                    }
+                                }
+                            }
+                        }
+                        .pie-section{
+                            display: grid;
+                            grid-template-columns: repeat(1, 1fr);
+                            gap: 20px;
+                        }
+                    }
+                    .second-content{
+                        .budgetPolar{
+                            flex-direction: column;
+                            .polar-graph{
+                                width: 94%;
+                                canvas{
+                                    max-width: 300px;
+                                }
+                            }
+                            .polar-cart{
+                                margin-top: 20px;
+                                width: 100%;
+                                display: grid;
+                                grid-template-columns: repeat(1, 1fr);
+                                gap: 30px;
+                            }
+                        }
+                    }
+                    .third-content{
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                }
+            }
+        }
+    }
+}
+@media(min-width:759px) and (max-width:824px){
+    .container-fluid{
+        .side-nav{
+            display: none;
+            }
+        
+        .container{
+            margin-left: 0% !important;
+            width: 100% !important;
+            .icon-list{
+                width: 100% !important;
+            }
+            .main-content{
+                .first{
+                    .admin-blog{
+                        h2{
+                            font-size: 28px;
+                        }
+                        p{
+                            max-width: 290px;
+                        }
+                    }
+                }
+                .second{
+                    text-align: center;
+                }
+                
+            }
+            .tab{
+                .tab-content{
+                    .first-content{
+                        .card-area{
+                            display: grid;
+                            grid-template-columns: repeat(3, 1fr);
+                        }
+                        .graph-section{
+                            .overview-section{
+                                display: grid;
+                                grid-template-columns: repeat(1, 1fr);
+                                .close{
+                                    
+                                    #chart{
+                                       min-width: 350px;
+                                    }
+                                }
+                                
+                            }
+                        }
+                        .pie-section{
+                            display: grid;
+                            grid-template-columns: repeat(1, 1fr);
+                            gap: 20px;
+                        }
+                        
+                    }
+                    .second-content{
+                        .budgetPolar{
+                            flex-direction: column;
+                            .polar-graph{
+                                width: 94%;
+                                canvas{
+                                    max-width: 350px;
+                                }
+                            }
+                            .polar-cart{
+                                margin-top: 20px;
+                                width: 100%;
+                                display: grid;
+                                grid-template-columns: repeat(2, 1fr);
+                                gap: 30px;
+                            }
+                        }
+                    }
+                    .third-content{
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                    }
+                }
+            }
+        }
+    }
+}
+@media(min-width:825px) and (max-width:984px){
+    .container-fluid{
+        .side-nav{
+            display: none;
+            }
+    }
+    .container{
+        margin-left: 0% !important;
+        width: 100% !important;
+        .icon-list{
+            width: 100% !important;
+        }
+        .pie-section{
+            .polarArea{
+                .btn-area{
+                    position: absolute;
+                }
+            }
+        }
+        .tab{
+            .tab-content{
+                .second-content{
+                    .budgetPolar{
+                        flex-direction: column;
+                        .polar-graph{
+                            width: 95% !important;
+                            canvas{
+                                min-width: 350px;
+                            }
+                        }
+                        .polar-cart{
+                            margin-top: 20px;
+                            width: 100% !important;
+                            display: grid;
+                            grid-template-columns: repeat(3, 1fr) !important;
+                            gap: 30px;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
+@media (min-width:985px) and (max-width:1070px){
+    .container-fluid{
+        .side-nav{
+            .profile{
+               p{
+                font-size: 14px;
+               }
+            }
+        }
+        .container{
+            .main-content{
+                .first{
+                    .admin-blog{
+                        h2{
+                            font-size: 25px;
+                        }
+                        p{
+                            max-width: 290px;
+                        }
+                    }
+                }
+                .second{
+                    text-align: center;
+                }
+                
+            }
+           .tab{
+            .tab-content{
+                .first-content{
+                    .card-area{
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                    }
+                    .graph-section{
+                        .overview-section{
+                            display: grid;
+                            grid-template-columns: repeat(1, 1fr);
+                            .close{
+                                
+                                #chart{
+                                   min-width: 350px;
+                                }
+                            }
+                            
+                        }
+                    }
+                    .pie-section{
+                        display: grid;
+                        grid-template-columns: repeat(1, 1fr);
+                        gap: 20px;
+                    }
+                }
+                .second-content{
+                    .budgetPolar{
+                        flex-direction: column;
+                        .polar-graph{
+                            width: 95% !important;
+                            canvas{
+                                min-width: 350px;
+                            }
+                        }
+                        .polar-cart{
+                            margin-top: 20px;
+                            width: 100% !important;
+                            display: grid;
+                            grid-template-columns: repeat(3, 1fr) !important;
+                            gap: 30px;
+                        }
+                    }
+                }
+               
+                .third-content{
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            }
+           }
+        }
+    }    
+}
+@media (min-width:1070px) and (max-width:1315px){
+    .container-fluid{
+        .side-nav{
+            .profile{
+               p{
+                font-size: 14px;
+               }
+            }
+        }
+        .container{
+            .main-content{
+                .first{
+                    .admin-blog{
+                        h2{
+                            font-size: 25px;
+                        }
+                        p{
+                            max-width: 290px;
+                        }
+                    }
+                }
+                .second{
+                    text-align: center;
+                }
+                
+            }
+           .tab{
+            .tab-content{
+                .first-content{
+                    .card-area{
+                        display: grid;
+                        grid-template-columns: repeat(4, 1fr);
+                    }
+                    .graph-section{
+                        .overview-section{
+                            display: grid;
+                            grid-template-columns: repeat(1, 1fr);
+                            .close{
+                                #chart{
+                                   min-width: 350px;
+                                }
+                            }
+                            
+                        }
+                    }
+                    .pie-section{
+                        display: grid;
+                        grid-template-columns: repeat(1, 1fr);
+                        gap: 20px;
+                    }
+                }
+                .second-content{
+                    .budgetPolar{
+                        flex-direction: column;
+                        .polar-graph{
+                            width: 95% !important;
+                            canvas{
+                                min-width: 400px;
+                            }
+                        }
+                        .polar-cart{
+                            margin-top: 20px;
+                            width: 100% !important;
+                            display: grid;
+                            grid-template-columns: repeat(2, 1fr) !important;
+                            gap: 30px;
+                        }
+                    }
+                }
+                .third-content{
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            }
+           }
+        }
+    }    
+}
+@media (min-width:1316px){
+    .container-fluid{
+        .side-nav{
+            .profile{
+               p{
+                font-size: 14px;
+               }
+            }
+        }
+        .container{
+            .main-content{
+                .first{
+                    .admin-blog{
+                        h2{
+                            font-size: 36px;
+                        }
+                        p{
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .second{
+                    text-align: center;
+                }
+                
+            }
+           .tab{
+            .tab-content{
+                .first-content{
+                    .card-area{
+                        display: grid;
+                        grid-template-columns: repeat(4, 1fr);
+                    }
+                    .graph-section{
+                        .overview-section{
+                            display: grid;
+                            grid-template-columns: repeat(2, 1fr);
+                            .close{
+                                
+                                #chart{
+                                   min-width: 350px;
+                                }
+                            }
+                            .overview{
+                                .first-grid{
+                                    .grid-one{
+                                        padding: 40px 50px;
+                                    }
+                                    .grid-two{
+                                        padding: 40px 50px;
+                                    }
+                                }
+                                .second-grid{
+                                    .grid-three{
+                                        padding: 65px 15px;
+                                    }
+                                }
+                            }
+                            
+                        }
+                    }
+                    .pie-section{
+                        .polarArea{
+                            .btn-area{
+                                position: absolute;
+                            }
+                        }
+                    }
+                }
+                .third-content{
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                }
+            }
+           }
+        }
+    }    
+}
+
