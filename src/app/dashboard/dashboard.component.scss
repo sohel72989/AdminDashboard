@@ -957,13 +957,14 @@
                             grid-template-columns: repeat(1, 1fr);
                         }
                         .graph-section{
+                            overflow: hidden;
                             .graph-content{
                                 h4{
-                                    font-size: 16px;
+                                    font-size: 14px;
                                 }
                                 .week{
                                     a{
-                                        font-size: 14px;
+                                        font-size: 12px;
                                         padding: 0px 5px;
                                     }
                                 }
@@ -986,7 +987,24 @@
                                     }
                                     .first-grid{
                                         display: grid;
-                                        grid-template-columns: repeat(1, 1fr);
+                                        grid-template-columns: repeat(2, 1fr);
+                                        width: 100%;
+                                        .grid-one{
+                                            font-size: 32px;
+                                            padding: 15px;
+                                            span{
+                                                font-size: 12px;
+                                                font-weight: 500;
+                                            }
+                                        }
+                                        .grid-two{
+                                            font-size: 32px;
+                                            padding: 20px;
+                                            span{
+                                                font-size: 12px;
+                                                font-weight: 500;
+                                            }
+                                        }
                                     }
                                     .second-grid{
                                         display: grid;
